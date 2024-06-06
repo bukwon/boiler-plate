@@ -33,6 +33,10 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
+app.get('/api/hello', (req, res) => {
+    res.send('안녕하세요 ~');
+});
+
 app.post('/api/users/register', async (req, res) => {
     // 회원 가입 할 때 필요한 정보들을 client에서 가져오면
     // DB에 넣을 수 있음
